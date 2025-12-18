@@ -4,4 +4,4 @@ To facilitate reproducibility and future research, we will make our code, models
 
 ## 📢 Updates
 
-- **[12 Dec 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
+- **[6 Dec 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
