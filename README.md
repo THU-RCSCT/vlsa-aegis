@@ -4,4 +4,5 @@ To facilitate reproducibility and future research, we will make our code, models
 
 ## 📢 Updates
 
-- **[9 Dec 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
+- **[Dec 2025]** 📅 We plan to release the **SafeLIBERO benchmark** on **December 20**.
+- **[Dec 9, 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
