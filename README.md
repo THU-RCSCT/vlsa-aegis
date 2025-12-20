@@ -1,5 +1,9 @@
-<h1 align="center"><a href="" style="color:#9C276A">
-VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer</a></h1>
+<h1 align="center">
+  <a href="" style="color:#9C276A">
+    VLSA: Vision-Language-Action Models with<br>
+    Plug-and-Play Safety Constraint Layer
+  </a>
+</h1>
 <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 <h5 align="center">
 
