@@ -89,9 +89,8 @@ Each `.pruned_init` file serves as a dataset for scene diversity. It contains ex
 >
 > ```text
 > Line 1 (Episode 0): [Robot qpos] + [Obj_1 Pose (7)] ... + [Obj_N Pose (7)] + [Robot qvel] + [Obj_1 Vel (6)] ... + [Obj_N Vel (6)]
-> Line 2 (Episode 1): [Robot qpos] + [Obj_1 Pose (7)] ... + [Obj_N Pose (7)] + [Robot qvel] + [Obj_1 Vel (6)] ... + [Obj_N Vel (6)]
 > ...
-> Line 50 (Episode 49): ...
+> Line 50 (Episode 49): [Robot qpos] + [Obj_1 Pose (7)] ... + [Obj_N Pose (7)] + [Robot qvel] + [Obj_1 Vel (6)] ... + [Obj_N Vel (6)]
 > ```
 
 
