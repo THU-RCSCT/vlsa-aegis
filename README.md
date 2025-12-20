@@ -60,4 +60,42 @@ python demo.py
 ```
 ### 🧠 Scene Generation Logic
 
+The scene generation process in **SafeLIBERO** relies on a strict coordination between semantic definitions (Logic) and geometric initializations (Physics). This decoupling ensures that tasks are both semantically consistent and visually diverse.
+
+#### 1. The Generation Pipeline
+The system instantiates a scene through two sequential stages:
+
+1.  **Object Collection (`.bddl`):**
+    First, the system parses the **BDDL** (Behavior Domain Definition Language) file. It identifies all object instances defined in the `(:objects ...)` section and registers them into a global **Object Dictionary**.
+2.  **Pose Initialization (`.pruned_init`):**
+    Once the objects are instantiated, the system loads the corresponding `.pruned_init` file. This file acts as a configuration map, assigning precise initial states to every object for different episodes.
+
+#### 2. Object State Representation
+In the initialization system, a single object's physical state consists of two components: **Pose** (Position) and **Velocity** (Motion).
+
+* **Pose Vector (7-dim):** `[x, y, z, qw, qx, qy, qz]`
+    * **Dim 0-2 (Position):** Cartesian coordinates `(x, y, z)` in the world frame.
+    * **Dim 3-6 (Orientation):** A 4-dimensional **Quaternion** representing rotation.
+* **Velocity Vector (6-dim):** `[vx, vy, vz, wx, wy, wz]`
+    * **Dim 0-2 (Linear):** Linear velocity `(vx, vy, vz)`.
+    * **Dim 3-5 (Angular):** Angular velocity `(wx, wy, wz)`.
+
+#### 3. Structure of `.pruned_init` Files
+Each `.pruned_init` file serves as a dataset for scene diversity. It contains exactly **50 lines**, corresponding to **50 unique evaluation episodes**.
+
+* **Row Structure:** Each line represents the complete simulation state (`qpos` + `qvel`) for **one episode**.
+* **Data Layout:** Within each line, the state vectors are concatenated in a strict order: **Positions first, then Velocities**.
+
+> **💾 File Layout Visualization:**
+> Assuming a scene has $N$ objects.
+>
+> ```text
+> Line 1 (Episode 0): [Robot qpos] + [Obj_1 Pose (7)] ... + [Obj_N Pose (7)] + [Robot qvel] + [Obj_1 Vel (6)] ... + [Obj_N Vel (6)]
+> Line 2 (Episode 1): [Robot qpos] + [Obj_1 Pose (7)] ... + [Obj_N Pose (7)] + [Robot qvel] + [Obj_1 Vel (6)] ... + [Obj_N Vel (6)]
+> ...
+> Line 50 (Episode 49): ...
+> ```
+
+
+
 ### 📜 Publications Using this Benchmark
