@@ -30,7 +30,8 @@
 - [Benchmark Tasks](#-benchmark-tasks)
 - [Installation](#-installation)
 - [Getting Started](#-getting-started)
-
+- [Scene Generation Logic](#-scene-generation-logic)
+- [Publications Using this Benchmark](#-publications-using-this-benchmark)
 ---
 
 ### 📝 Benchmark Tasks
@@ -57,3 +58,6 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --e
 ```
 python demo.py
 ```
+### 🧠 Scene Generation Logic
+
+### 📜 Publications Using this Benchmark
