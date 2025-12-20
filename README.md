@@ -139,4 +139,18 @@ The following research works have utilized the **SafeLIBERO Benchmark** for expe
 | xxx | xxx | xxx | 
 
 
-**Add Your Work**: If you have used this benchmark in your research, please feel free to share your work with us. We are happy to include it in this list to support the research community. We sincerely appreciate the support of the research community and encourage researchers to share their publications using this benchmark. Thank you for your contributions!
+**Add Your Work**: If you have used this benchmark in your research, please feel free to share your work with us. We are happy to include it in this list to support the research community. We sincerely appreciate the support of the research community and encourage researchers to share their publications using this benchmark. Thank you for your contributions! 
+
+## Citation <a name="citation"></a>
+If you find the project helpful for your research, please consider citing our paper:
+```bibtex
+@article{hu2025vlsa,
+  title={VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer},
+  author={Hu, Songqiao and Liu, Zeyi and Liu, Shuang and Cen, Jun and Meng, Zihan and He, Xiao},
+  journal={arXiv preprint arXiv:2512.11891},
+  year={2025}
+}
+```
+## Acknowledgment <a name="acknowledgment"></a>
+This project builds upon [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO), [RynnVLA-002](https://github.com/alibaba-damo-academy/RynnVLA-002), and [MCC5-THU-Gearbox-Benchmark-Datasets
+](https://github.com/liuzy0708/MCC5-THU-Gearbox-Benchmark-Datasets/tree/main). We thank these teams for their open-source contributions.
