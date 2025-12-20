@@ -13,7 +13,7 @@
 
 ## 📢 Updates
 
-- **[Dec 2025]** 📅 We plan to release the **SafeLIBERO benchmark** on **December 20**.
+- **[Dec 20, 2025]** 🎉 We have released the **SafeLIBERO benchmark**.
 - **[Dec 9, 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
 
  
