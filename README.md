@@ -29,7 +29,7 @@
 ### 📚 Contents
 - [Benchmark Tasks](#-benchmark-tasks)
 - [Installation](#-installation)
-- [Getting Started](#-getting-started)
+- [Running Evaluation](#-running-evaluation)
 - [Automated Collision Check](#-automated-collision-check)
 - [Scene Generation Logic](#-scene-generation-logic)
 - [Publications Using this Benchmark](#-publications-using-this-benchmark)
@@ -55,7 +55,7 @@ cd vlsa-aegis/safelibero
 pip install -r requirements.txt
 ```
 
-### 🚀 Getting Started
+### 🚀 Running Evaluation
 ```
 python main_demo.py \
     --task-suite-name safelibero_spatial \
