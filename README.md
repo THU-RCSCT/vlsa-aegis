@@ -7,8 +7,6 @@ VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer</
 [![Website](https://img.shields.io/badge/Website-Project_Page-blue.svg?logo=googlechrome&logoColor=white)](https://vlsa-aegis.github.io/)
 </h5>
 
-To facilitate reproducibility and future research, we will make our code, models, and the benchmark datasets publicly available in the coming week. 
-
 ## 📢 Updates
 
 - **[Dec 2025]** 📅 We plan to release the **SafeLIBERO benchmark** on **December 20**.
