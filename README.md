@@ -57,6 +57,7 @@ pip install -r requirements.txt
 
 ### 🚀 Running Evaluation
 ```
+export PYTHONPATH=$PYTHONPATH:$PWD/safelibero
 python main_demo.py \
     --task-suite-name safelibero_spatial \
     --safety-level I \
