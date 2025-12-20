@@ -1,0 +1,87 @@
+<mujoco model="wine_bottle_red_main">
+  <asset>
+    <texture file="label_wine.png" name="tex-wine_bottle_red_logo" type="2d"/>
+    <material name="wine_bottle_red_logo" reflectance="0.5" texrepeat="1 1" texture="tex-wine_bottle_red_logo" texuniform="false"/>
+    <mesh file="visual/wine_bottle_red_logo_vis.msh" name="wine_bottle_red_logo_vis" scale="0.808 0.808 0.808"/>
+    
+    <texture file="cork_texture.png" name="tex-wine_bottle_red_cork" type="2d"/>
+    <material name="wine_bottle_red_cork" reflectance="0.5" texrepeat="1 1" texture="tex-wine_bottle_red_cork" texuniform="false"/>
+    <mesh file="visual/wine_bottle_red_cork_vis.msh" name="wine_bottle_red_cork_vis" scale="0.8 0.8 0.8"/>
+
+    <material name="wine_bottle_red_main" reflectance="0.5" texrepeat="1 1" rgba="0.004 0.036 0.002 1" specular="0.5" />
+    <mesh file="visual/wine_bottle_red_main_vis.msh" name="wine_bottle_red_main_vis" scale="0.8 0.8 0.8"/>
+  </asset>
+
+  <worldbody>
+    <body>
+      <body name="object">
+
+        <!-- 视觉 mesh -->
+        <geom type="mesh" mesh="wine_bottle_red_main_vis" material="wine_bottle_red_main"
+              conaffinity="0" contype="0" group="1"
+              solimp="0.998 0.998 0.001" solref="0.001 1"
+              density="100" friction="0.95 0.3 0.1"/>
+        <geom type="mesh" mesh="wine_bottle_red_cork_vis" material="wine_bottle_red_cork"
+              conaffinity="0" contype="0" group="1"
+              solimp="0.998 0.998 0.001" solref="0.001 1"
+              density="100" friction="0.95 0.3 0.1"/>
+        <geom type="mesh" mesh="wine_bottle_red_logo_vis" material="wine_bottle_red_logo"
+              conaffinity="0" contype="0" group="1"
+              solimp="0.998 0.998 0.001" solref="0.001 1"
+              density="100" friction="0.95 0.3 0.1"/>
+
+        <!-- 碰撞体（全部 ×1.6） -->
+        <geom type="box" pos="0.00000 0.00000 0.05962" size="0.02405 0.02405 0.05784" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00000 0.00000 0.16458" size="0.00832 0.00832 0.08829" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00000 0.00000 0.12974" size="0.01120 0.01888 0.01888" quat="0.50000 0.50000 -0.50000 0.50000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00720 0.00000 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00610 -0.00394 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00357 -0.00624 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00019 -0.00765 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="-0.00571 -0.00482 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.70711 0.70711 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="-0.00614 -0.00154 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 1.00000 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="-0.00549 0.00502 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="-0.00112 0.00678 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 1.00000 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00435 0.00613 0.16458" size="0.00413 0.00413 0.08829" quat="0.00000 0.00000 0.00000 1.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00000 0.00000 0.14888" size="0.01120 0.01285 0.01285" quat="0.50000 0.50000 -0.50000 0.50000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+
+        <geom type="box" pos="-0.02768 0.00000 0.05330" size="0.00309 0.01688 0.04766" quat="0.00000 0.00000 1.00000 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.02862 0.00000 0.05330" size="0.00309 0.01688 0.04766" quat="0.00000 0.00000 1.00000 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.00138 0.02859 0.05330" size="0.00309 0.01688 0.04766" quat="-0.00000 -0.72389 -0.68992 -0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="-0.00038 -0.02862 0.05330" size="0.00309 0.01688 0.04766" quat="-0.00000 -0.71183 -0.70235 -0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="-0.01798 -0.02227 0.05330" size="0.00309 0.01688 0.04766" quat="0.00000 -0.43119 0.90226 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="-0.01714 0.02293 0.05330" size="0.00309 0.01688 0.04766" quat="0.00000 -0.89402 0.44802 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.01936 0.02107 0.05330" size="0.00309 0.01688 0.04766" quat="-0.00000 -0.91561 -0.40207 -0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+        <geom type="box" pos="0.02181 -0.01853 0.05330" size="0.00309 0.01688 0.04766" quat="0.00000 0.34482 0.93867 0.00000"
+              group="0" rgba="0.8 0.8 0.8 0.3"/>
+
+      </body>
+
+      <!-- sites -->
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.06" name="bottom_site" />
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.04" name="top_site" />
+      <site rgba="0 0 0 0" size="0.005" pos="0.025 0.025 0" name="horizontal_radius_site" />
+
+    </body>
+  </worldbody>
+</mujoco>

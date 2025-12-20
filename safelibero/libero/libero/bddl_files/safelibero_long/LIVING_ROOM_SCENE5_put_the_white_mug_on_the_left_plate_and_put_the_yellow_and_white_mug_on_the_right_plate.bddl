@@ -1,0 +1,111 @@
+(define (problem LIBERO_Living_Room_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language put the white mug on the left plate and put the yellow and white mug on the right plate)
+
+  (:regions
+      (plate_left_region
+          (:target living_room_table)
+          (:ranges ((-0.025 -0.325 0.025 -0.275)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (plate_right_region
+          (:target living_room_table)
+          (:ranges ((-0.025 0.275 0.025 0.325)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (porcelain_mug_init_region
+          (:target living_room_table)
+          (:ranges ((-0.125 -0.175 -0.075 -0.125)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (white_yellow_mug_init_region
+          (:target living_room_table)
+          (:ranges ((-0.075 0.075 -0.025 0.125)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (red_coffee_mug_init_region
+          (:target living_room_table)
+          (:ranges ((-0.225 -0.025 -0.175 0.025)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+
+      ;; ✅ Added 7 unified obstacle regions
+      (moka_pot_region
+          (:target living_room_table)
+          (:ranges ((0.30 -0.30 0.50 -0.10)))
+      )
+      (storage_box_region
+          (:target living_room_table)
+          (:ranges ((0.30 0.10 0.50 0.30)))
+      )
+      (milk_carton_region
+          (:target living_room_table)
+          (:ranges ((0.10 -0.30 0.30 -0.10)))
+      )
+      (wine_bottle_obstacle_region
+          (:target living_room_table)
+          (:ranges ((0.10 0.10 0.30 0.30)))
+      )
+      (red_mug_region
+          (:target living_room_table)
+          (:ranges ((-0.30 0.10 -0.10 0.30)))
+      )
+      (yellow_book_region
+          (:target living_room_table)
+          (:ranges ((-0.30 -0.30 -0.10 -0.10)))
+      )
+      (box_base_region
+          (:target living_room_table)
+          (:ranges ((-0.50 -0.20 -0.30 0.00)))
+      )
+  )
+
+  (:fixtures
+    living_room_table - living_room_table
+  )
+
+  (:objects
+    porcelain_mug_1 - porcelain_mug
+    chocolate_pudding_1 - chocolate_pudding
+    white_yellow_mug_1 - white_yellow_mug
+    plate_1 plate_2 - plate
+
+    ;; ✅ Added unified obstacle objects
+    moka_pot_small_obstacle_1 - moka_pot_small_obstacle
+    white_storage_box_obstacle_1 - white_storage_box_obstacle
+    milk_small_obstacle_1 - milk_small_obstacle
+    wine_bottle_obstacle_1 - wine_bottle_obstacle
+    red_coffee_mug_obstacle_1 - red_coffee_mug_obstacle
+    yellow_book_obstacle_1 - yellow_book_obstacle
+    box_small_base_1 - box_small_base
+  )
+
+  (:obj_of_interest
+    plate_1
+    plate_2
+    white_yellow_mug_1
+    porcelain_mug_1
+  )
+
+  (:init
+    (On plate_1 living_room_table_plate_left_region)
+    (On plate_2 living_room_table_plate_right_region)
+    (On chocolate_pudding_1 living_room_table_red_coffee_mug_init_region)
+    (On white_yellow_mug_1 living_room_table_white_yellow_mug_init_region)
+    (On porcelain_mug_1 living_room_table_porcelain_mug_init_region)
+
+    ;; ✅ Added obstacle initial positions
+    (On moka_pot_small_obstacle_1 living_room_table_moka_pot_region)
+    (On white_storage_box_obstacle_1 living_room_table_storage_box_region)
+    (On milk_small_obstacle_1 living_room_table_milk_carton_region)
+    (On wine_bottle_obstacle_1 living_room_table_wine_bottle_obstacle_region)
+    (On red_coffee_mug_obstacle_1 living_room_table_red_mug_region)
+    (On yellow_book_obstacle_1 living_room_table_yellow_book_region)
+    (On box_small_base_1 living_room_table_box_base_region)
+  )
+
+  (:goal
+    (And (On porcelain_mug_1 plate_1)
+         (On white_yellow_mug_1 plate_2))
+  )
+)

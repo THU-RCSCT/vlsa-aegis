@@ -1,0 +1,7 @@
+<body name="basket_object">
+  <site type="box" pos="0.0 0.0 0.87185" size="0.06108 0.06108 0.06949" rgba="0.8 0 0 0" name="contain_region"/>
+  <geom type="mesh" mesh="basket_vis" material="floorplane"
+        solimp="0.998 0.998 0.001" solref="0.001 1"
+        density="100" friction="0.95 0.3 0.1"
+        group="1" />
+</body>

@@ -1,0 +1,5 @@
+libero/bddl_files/safelibero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl
+libero/bddl_files/safelibero_goal/put_the_bowl_on_top_of_the_cabinet.bddl
+libero/bddl_files/safelibero_goal/put_the_bowl_on_the_plate.bddl
+libero/bddl_files/safelibero_goal/put_the_cream_cheese_in_the_bowl.bddl
+libero/bddl_files/safelibero_goal/put_the_bowl_on_the_stove.bddl

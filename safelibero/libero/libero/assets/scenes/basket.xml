@@ -1,0 +1,18 @@
+<mujoco model="basket">
+  <asset>
+    <mesh file="/mnt/workspace/openpi/third_party/libero/libero/libero/assets/scenes/basket_vis.msh"
+          name="basket_vis"
+          scale="1.0 1.0 1.0" />
+  </asset>
+
+  <worldbody>
+    <body name="basket">
+      <geom type="mesh" mesh="basket_vis" material="basket"
+            solimp="0.998 0.998 0.001"
+            solref="0.001 1"
+            density="100"
+            friction="0.95 0.3 0.1"
+            group="1"/>
+    </body>
+  </worldbody>
+</mujoco>
