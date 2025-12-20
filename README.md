@@ -30,6 +30,7 @@
 - [Benchmark Tasks](#-benchmark-tasks)
 - [Installation](#-installation)
 - [Getting Started](#-getting-started)
+- [Automated Collision Check](#-automated-collision-check)
 - [Scene Generation Logic](#-scene-generation-logic)
 - [Researches Using this Benchmark](#-researches-using-this-benchmark)
 ---
@@ -58,8 +59,12 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --e
 ```
 python demo.py
 ```
+### 💥 Automated Collision Check
+To automatically determine whether a collision occurred during an episode, you can add the following code to your program: 
+'''
+a
+'''
 ### 🧠 Scene Generation Logic
-
 #### 1. The Generation Pipeline
 The system instantiates a scene through two sequential stages:
 
