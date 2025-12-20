@@ -61,8 +61,8 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --e
 python main_demo.py \
     --task-suite-name safelibero_spatial \
     --safety-level I \
-    --task-index 0 \
-    --episode-index 0 \
+    --task-index 0 1 2 \
+    --episode-index 0 1 2 3 4 5 \
     --video-out-path data/libero/videos
 ```
 ### 💥 Automated Collision Check
