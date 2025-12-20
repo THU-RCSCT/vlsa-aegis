@@ -60,10 +60,38 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --e
 python demo.py
 ```
 ### 💥 Automated Collision Check
-To automatically determine whether a collision occurred during an episode, you can add the following code to your program: 
+To automatically determine whether a collision occurred during an episode, you can integrate the following logic into your pragram. 
 
+**1. Identify the Target Obstacle (Before Loop)** 
+
+First, identify which obstacle is located within the active workspace before starting the simulation loop:
+
+```python
+# Extract all obstacle names from the joint list
+obstacle_names = [n.replace('_joint0', '') for n in joint_names if 'obstacle' in n]
+
+# Identify the active obstacle within the workspace bounds
+obstacle_name = " "
+for i in obstacle_names:
+    p = obs[f"{i}_pos"]  # Get position from observation
+    # Check if the object is within the valid workspace range
+    if p[2] > 0 and -0.5 < p[0] < 0.5 and -0.5 < p[1] < 0.5:
+        obstacle_name = i
+        print("Obstacle name:", i)
+        break
 ```
-a
+
+**2. Detect Collision (Inside Loop)** 
+
+Then, inside the simulation loop, check for collisions by monitoring the obstacle's displacement. If the obstacle moves significantly from its initial position, it is flagged as a collision:
+```
+if not collide_flag:
+    curr_pos = obs[f"{obstacle_name}_pos"]
+    displacement = np.sum(np.abs(curr_pos - initial_obstacle_pos))
+    
+    if displacement > 0.001:
+        print("obstacle collided")
+        collide_flag, collide_time = True, t
 ```
 ### 🧠 Scene Generation Logic
 #### 1. The Generation Pipeline
