@@ -17,7 +17,7 @@
 - **[Dec 9, 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
 
  
-## SafeLIBERO Benchmark
+## 📊 SafeLIBERO Benchmark
 <p align="center">
   <img src="https://github.com/songqiaohu/pictureandgif/blob/main/safelibero_overview.png?raw=true" alt="overview" width="600">
 </p> 
