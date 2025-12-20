@@ -60,7 +60,7 @@ pip install -r requirements.txt
 python main_demo.py \
     --task-suite-name safelibero_spatial \
     --safety-level I \
-    --task-index 0 1 2 \
+    --task-index 0 \
     --episode-index 0 1 2 3 4 5 \
     --video-out-path data/libero/videos
 ```
