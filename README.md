@@ -31,7 +31,7 @@
 - [Installation](#-installation)
 - [Getting Started](#-getting-started)
 - [Scene Generation Logic](#-scene-generation-logic)
-- [Publications Using this Benchmark](#-publications-using-this-benchmark)
+- [Researches Using this Benchmark](#-researches-using-this-benchmark)
 ---
 
 ### 📝 Benchmark Tasks
@@ -95,7 +95,7 @@ Each `.pruned_init` file serves as a dataset for scene diversity. It contains ex
 
 
 
-### 📜 Publications Using this Benchmark
+### 📜 Researches Using this Benchmark
 The following research works have utilized the **SafeLIBERO Benchmark** for experiments and analysis. Researchers can refer to the following articles for further insights:
 
 | Title | Journal / Conference / Preprints | Year | 
