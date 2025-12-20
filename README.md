@@ -60,8 +60,6 @@ python demo.py
 ```
 ### 🧠 Scene Generation Logic
 
-The scene generation process in **SafeLIBERO** relies on a strict coordination between semantic definitions (Logic) and geometric initializations (Physics). This decoupling ensures that tasks are both semantically consistent and visually diverse.
-
 #### 1. The Generation Pipeline
 The system instantiates a scene through two sequential stages:
 
