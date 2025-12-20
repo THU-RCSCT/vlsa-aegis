@@ -27,10 +27,13 @@
 ---
 
 ### 📚 Contents
-- [Benchmark Tasks](#benchmark-tasks)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
---- 
+- [Benchmark Tasks](#-benchmark-tasks)
+- [Installation](#-installation)
+- [Getting Started](#-getting-started)
+
+---
+
+### 📝 Benchmark Tasks
 
 | **Suite** | **Task 0** | **Task 1** | **Task 2** | **Task 3** |
 | :---: | :--- | :--- | :--- | :--- |
