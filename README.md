@@ -69,7 +69,7 @@ The system instantiates a scene through two sequential stages:
     Once the objects are instantiated, the system loads the corresponding `.pruned_init` file. This file acts as a configuration map, assigning precise initial states to every object for different episodes.
 
 #### 2. Object State Representation
-In the initialization system, a single object's physical state consists of two components: **Pose** (Position) and **Velocity** (Motion).
+In the initialization system, a single free object's physical state consists of two components: **Pose** (Position) and **Velocity** (Motion).
 
 * **Pose Vector (7-dim):** `[x, y, z, qw, qx, qy, qz]`
     * **Dim 0-2 (Position):** Cartesian coordinates `(x, y, z)` in the world frame.
@@ -96,3 +96,12 @@ Each `.pruned_init` file serves as a dataset for scene diversity. It contains ex
 
 
 ### 📜 Publications Using this Benchmark
+The following research works have utilized the **SafeLIBERO Benchmark** for experiments and analysis. Researchers can refer to the following articles for further insights:
+
+| Title | Journal / Conference / Preprints | Year | 
+ | ----- | ----- | ----- | 
+| XXX | XXX | 2025 | 
+
+
+### Add Your Work
+- If you have used this benchmark in your research, please feel free to share your work with us. We are happy to include it in this list to support the research community. We sincerely appreciate the support of the research community and encourage researchers to share their publications using this benchmark. Thank you for your contributions!
