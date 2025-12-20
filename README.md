@@ -27,10 +27,7 @@
 ---
 
 ### 📚 Contents
-- [Overview](#overview)
 - [Benchmark Tasks](#benchmark-tasks)
-- [Safety Constraints](#safety-constraints)
-- [Evaluation Metrics](#evaluation-metrics)
 - [Installation](#installation)
 - [Getting Started](#getting-started)
 
