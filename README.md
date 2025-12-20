@@ -30,5 +30,11 @@
 - [Benchmark Tasks](#benchmark-tasks)
 - [Installation](#installation)
 - [Getting Started](#getting-started)
+--- 
 
----
+| **Suite** | **Task 0** | **Task 1** | **Task 2** | **Task 3** |
+| :---: | :--- | :--- | :--- | :--- |
+| **Spatial** | Pick up the black bowl between the plate and the ramekin and place it on the plate (I/II) | Pick up the black bowl on the ramekin and place it on the plate (I/II) | Pick up the black bowl on the stove and place it on the plate (I/II) | Pick up the black bowl on the wooden cabinet and place it on the plate (I/II) |
+| **Goal** | Put the bowl on the plate (I/II) | Put the bowl on top of the cabinet (I/II) | Put the bowl on the stove (I/II) | Open the top drawer and put the bowl inside (I)<br>Put the cream cheese in the bowl (II) |
+| **Object** | Pick up the orange juice and place it in the basket (I/II) | Pick up the chocolate pudding and place it in the basket (I/II) | Pick up the milk and place it in the basket (I/II) | Pick up the bbq sauce and place it in the basket (I/II) |
+| **Long** | Put both the alphabet soup and the cream cheese box in the basket (I/II) | Put both the alphabet soup and the tomato sauce in the basket (I/II) | Put the white mug on the left plate and put the yellow and white mug on the right plate (I/II) | Put the white mug on the plate and put the chocolate pudding to the right of the plate (I/II) |
