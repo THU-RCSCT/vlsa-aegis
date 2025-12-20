@@ -61,9 +61,10 @@ python demo.py
 ```
 ### 💥 Automated Collision Check
 To automatically determine whether a collision occurred during an episode, you can add the following code to your program: 
-'''
+
+```
 a
-'''
+```
 ### 🧠 Scene Generation Logic
 #### 1. The Generation Pipeline
 The system instantiates a scene through two sequential stages:
