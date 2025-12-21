@@ -1,6 +1,6 @@
 <mujoco model="basket">
   <asset>
-    <mesh file="/mnt/workspace/openpi/third_party/libero/libero/libero/assets/scenes/basket_vis.msh"
+    <mesh file="./basket_vis.msh"
           name="basket_vis"
           scale="1.0 1.0 1.0" />
   </asset>

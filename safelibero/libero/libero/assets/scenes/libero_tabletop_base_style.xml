@@ -17,13 +17,13 @@
     <!-- added table texture and material for domain randomization -->
     <texture  name="textable" builtin="flat" height="512" width="512" rgb1="0.5 0.5 0.5" rgb2="0.5 0.5 0.5"/>
     <material name="table_mat" texture="textable" />
-    <mesh file="/mnt/workspace/openpi/third_party/safelibero/libero/libero/assets/scenes/basket_vis.msh"
+    <mesh file="./basket_vis.msh"
               name="basket_vis"
               scale="1.0 1.0 1.0" />
     
     <texture file="../stable_hope_objects/milk/texture_map.png" name="tex-textured" type="2d" />
     <material name="textured" reflectance="0.5" texrepeat="1 1" texture="tex-textured" texuniform="false" />
-    <mesh file="/mnt/workspace/openpi/third_party/safelibero/libero/libero/assets/scenes/textured_vis.msh" name="textured_vis" scale="0.012 0.014 0.012" />
+    <mesh file="./textured_vis.msh" name="textured_vis" scale="0.012 0.014 0.012" />
     <!-- <material name="wall_frame_mat" specular="0.5" shininess="0.45" rgba="1.0 0.0 .0 1.000000"/>     -->
     <!-- <mesh file="wall_frames.stl" name="wall_frames" scale="0.2 0.1 0.1" /> -->
   </asset>
