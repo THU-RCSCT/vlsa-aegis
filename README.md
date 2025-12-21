@@ -11,14 +11,15 @@
 [![Website](https://img.shields.io/badge/Website-Project_Page-blue.svg?logo=googlechrome&logoColor=white)](https://vlsa-aegis.github.io/)
 </h5> 
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/05618798-a36b-4ee1-b448-04ae45792ce1" alt="overview" width="700">
+</p>  
+
+
 ## 📢 Updates
 
 - **[Dec 20, 2025]** 🎉 We have released the **SafeLIBERO benchmark**.
 - **[Dec 9, 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/05618798-a36b-4ee1-b448-04ae45792ce1" alt="overview" width="600">
-</p>  
 
 ## 📊 SafeLIBERO Benchmark [![Detailed Overview](https://img.shields.io/badge/-Detailed_Overview-3776AB?logo=readthedocs&logoColor=white)](https://vlsa-aegis.github.io/benchmark.html) [![Video Demos](https://img.shields.io/badge/-Video_Demos-FF0000?logo=youtube&logoColor=white)](https://vlsa-aegis.github.io/)
 <p align="center">
