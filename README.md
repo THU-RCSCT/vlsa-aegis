@@ -86,7 +86,7 @@ python main_demo.py \
 ### 💥 Automated Collision Check
 To automatically determine whether a collision occurred during an episode, you can integrate the following logic into your pragram. 
 
-**1. Identify the Target Obstacle (Before Loop)** 
+**1. Identify the Obstacle (Before Loop)** 
 
 First, identify which obstacle is located within the active workspace before starting the simulation loop:
 
