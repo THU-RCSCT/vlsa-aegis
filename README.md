@@ -83,7 +83,7 @@ python main_demo.py \
     --episode-index 0 1 2 3 4 5 \
     --video-out-path data/libero/videos
 ```
-[!NOTE] The default *max_steps* is set to 10 for a quick scene preview. To start the formal evaluation, please modify main_demo.py to increase *max_steps*.
+[!NOTE] The default *max_steps* is set to 10 for a quick scene preview. To start the formal evaluation, please modify main_demo.py to increase *max_steps*. Additionally, you need to integrate your model to output valid actions.
 ### 💥 Automated Collision Check
 To automatically determine whether a collision occurred during an episode, you can integrate the following logic into your pragram. 
 
