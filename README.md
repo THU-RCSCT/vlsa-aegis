@@ -9,6 +9,7 @@
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2511.11891-AD1C18.svg?logo=arXiv)](https://arxiv.org/pdf/2512.11891) 
 [![Website](https://img.shields.io/badge/Website-Project_Page-blue.svg?logo=googlechrome&logoColor=white)](https://vlsa-aegis.github.io/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-SafeLIBERO-FFD21E.svg)](https://huggingface.co/datasets/THURCSCT/SafeLIBERO)
 </h5> 
 
 <p align="center">
