@@ -143,7 +143,7 @@ pip install -r requirements.txt
 ### 🚀 Running Evaluation
 ```
 export PYTHONPATH=$PYTHONPATH:$PWD/safelibero
-python main_demo.py \
+python main_demo_dummy.py \
     --task-suite-name safelibero_spatial \
     --safety-level I \
     --task-index 0 \
