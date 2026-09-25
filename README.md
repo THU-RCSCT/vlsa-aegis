@@ -227,7 +227,12 @@ The following research works have utilized the **SafeLIBERO Benchmark** for expe
 | Title | Journal / Conference / Preprints | Year | 
 |:-----:|:--------------------------------:|:----:|
 | VLSA: Vision-Language-Action Models with <br> Plug-and-Play Safety Constraint Layer | arXiv | 2025 | 
-| xxx | xxx | xxx | 
+| Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models | arXiv | 2026 | 
+| SafeDojo: Safe Reinforcement Learning for VLA via Interactive World Model | The Conference on Robot Learning (CoRL) | 2026 |
+| Neuro-Symbolic Safety Guidance for Vision-Language-Action Models via Constrained Flow Matching | International Conference on Neuro-Symbolic Systems (NeuS) | 2026 |
+| DetAug: Obstacle-Blind Trajectory Augmentation for Zero-shot Obstacle Avoidance | arXiv | 2026 |
+| Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation | arXiv | 2026 |
+| VLPSA: Vision-Language-Poisson-Safe Actions for Full-Body Safety of Learned Policies | arXiv | 2026 |
 
 
 **Add Your Work**: If you have used this benchmark in your research, please feel free to share your work with us. We are happy to include it in this list to support the research community. We sincerely appreciate the support of the research community and encourage researchers to share their publications using this benchmark. Thank you for your contributions! 
