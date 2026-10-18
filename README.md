@@ -79,6 +79,7 @@
 
 ## 📢 Updates
 
+- **[Jun 17, 2026]** 🎉 AEGIS has been accepted by IROS 2026.
 - **[Feb 19, 2026]** 🎉 We have released the **AEGIS** code.
 - **[Dec 20, 2025]** 🎉 We have released the **SafeLIBERO benchmark**.
 - **[Dec 9, 2025]** 🔥 Initial release of the **vlsa-aegis** repository.
